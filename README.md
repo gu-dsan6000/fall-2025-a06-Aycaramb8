@@ -68,7 +68,7 @@ ls data/raw/application_* | head -10
 # Should see directories like: application_1485248649253_0052
 
 # 5. Create your personal S3 bucket (replace YOUR-NET-ID with your actual net ID)
-export YOUR_NET_ID="your-net-id"  # e.g., "abc123"
+export YOUR_NET_ID="xc280"  # e.g., "abc123"
 aws s3 mb s3://${YOUR_NET_ID}-assignment-spark-cluster-logs
 
 # 6. Upload the data to S3

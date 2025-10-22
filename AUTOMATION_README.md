@@ -15,7 +15,7 @@ Automatically creates and configures a complete Spark cluster with:
 
 **Usage:**
 ```bash
-./setup-spark-cluster.sh <LAPTOP_IP>
+./setup-spark-cluster.sh 73.132.27.40
 ```
 
 **Parameters:**
@@ -99,7 +99,7 @@ Before running the setup script, ensure you have:
 4. Access your cluster:
    ```bash
    # SSH to master (use key from output)
-   ssh -i spark-cluster-key-TIMESTAMP.pem ubuntu@MASTER_IP
+   ssh -i spark-cluster-key-1761078106.pem ubuntu@13.222.225.175
 
    # Or open Web UI in browser
    http://MASTER_IP:8080
@@ -107,7 +107,7 @@ Before running the setup script, ensure you have:
 
 5. Run a test job:
    ```bash
-   ssh -i spark-cluster-key-TIMESTAMP.pem ubuntu@MASTER_IP
+   ssh -i spark-cluster-key-1761078106.pem ubuntu@13.222.225.175
    cd ~/spark-cluster
    source cluster-ips.txt
    uv run python nyc_tlc_problem1_cluster.py spark://$MASTER_PRIVATE_IP:7077
